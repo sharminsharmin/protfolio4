@@ -32,21 +32,23 @@ body{
 
 
 .hero-section{
-    background-color:black;
-    /* height: 100vh; */
-    position: relative;
+    background-color:black; 
+    height: 100vh;
+ position: relative;
 }
+
+
 
 .img img{
  width: 350px;
- height: 700px;
+ height: 650px;
 
  margin-left: 60%;
 }
 
 .input-btn{
     border: 3px solid #F9004D;
-    width: 380px;
+    width: 390px;
     background-color: white;
     border-radius: 50px;
 
@@ -301,19 +303,28 @@ padding: 20px;
   
 }
 .icon{
-  
-    
+ height: 45px;
+ width: 45px;
+ background-color: #F9004D;
+ margin: 0px 10px;
+ border-radius: 50%; 
+display: flex;
+justify-content: center;
+align-items: center;
+transition: all 0.3s;
+} 
+
+.icon:hover{
+    transform: scale(1.2);
 }
-.icon i{
-    font-size: 25px;
+
+
+.footer-icon a i{
+color: white;
+font-size: 25px;
    
 }
-.icon a i{
-    color: white;
-    background-color: #F9004D;
-    padding: 20px 20px;
-    margin: 10px 15px;
-    border-radius: 30px; 
+.footer-icon a{
     text-decoration: none;
 
 }
@@ -323,6 +334,22 @@ padding: 20px;
     font-size: 14px;
     margin-top: 70px;
 }
-.footer-icon i:hover{
-   transform: scale(1.2);
+
+/* @media design */
+
+@media screen and (max-width: 600px) {
+   .grid-section{
+       grid-template-columns: repeat(1, 1fr);
+       grid-gap: 40px;
+   }
+.about-me{
+    flex-direction: column
 }
+.hero-section{
+  
+}
+
+
+
+  }
+
